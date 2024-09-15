@@ -20,12 +20,21 @@ class Solution {
         int[] numes= {1,2,3,4,4,5};
         int k = 0;
         int val = 4;
+        int p =0;
         System.out.println(n.removeElement(numes,val));
         int j = numes.length;
-        if (k !=(j-1)){
-            for (int i:numes){
+        for (int i:numes){
+            if (i ==val){
+                p++;
+            }
+        }
+        System.out.println(p);
+        
+        for (int i:numes){
+            if (k <(j-p)){
                 System.out.println(i);
                 k++;
+
             }
         }
         
