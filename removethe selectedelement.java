@@ -15,4 +15,19 @@ class Solution {
         }
         return j;
     }
+    public static void main(String[] args) {
+        Solution n = new Solution();
+        int[] numes= {1,2,3,4,4,5};
+        int k = 0;
+        int val = 4;
+        System.out.println(n.removeElement(numes,val));
+        int j = numes.length;
+        if (k !=(j-1)){
+            for (int i:numes){
+                System.out.println(i);
+                k++;
+            }
+        }
+        
+    }
 }
