@@ -19,7 +19,7 @@ class Solution {
         Solution n = new Solution();
         int[] numes= {1,2,3,4,4,5};
         int k = 0;
-        int val = 4;
+        int val = 3;
         int p =0;
         System.out.println(n.removeElement(numes,val));
         int j = numes.length;
@@ -32,7 +32,7 @@ class Solution {
         
         for (int i:numes){
             if (k <(j-p)){
-                System.out.println(i);
+                System.out.print(i+"   ");
                 k++;
 
             }
